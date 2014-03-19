@@ -33,15 +33,53 @@
             </div>
         </div>
     </header>
-    <div class="container">
-        <h2>Welcome to OpenFluency.</h2>
-        <p><strong>OpenFluency</strong> is a foreign language vocabulary acquisition system based on flashcards, widely used as a learning drill to aid memorization.</p>
+    <div class="container course-search">
+        <ul class="breadcrumb">
+            <li><a href="dashboard.html">Home</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="course-search.html">Search for Course</a></li>
+        </ul>
+        <h2>Course Search</h2>
+        <input class="form-control" type="text" placeholder="Type a course name or keyword" id="search-text"/>
+        <select class="form-control">
+            <option value="default">Filter by language</option>
+            <option value="filter-japanese">Japanese</option>
+            <option value="filter-chinese">Chinese</option>
+        </select>
 
-        <hr />
-
-        <a class="btn btn-primary" href="course-search.html">Course Search</a>
-        <a class="btn btn-primary" href="#">Deck Search</a>
-        <a class="btn btn-primary" href="#">Flashcard Search</a>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Course number</th>
+                    <th>Title/instructor</th>
+                    <th>Description</th>
+                    <th>Number of chapters</th>
+                    <th>Start date</th>
+                    <th>End date</th>
+                    <th>Enrolled</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>JAP-1</td>
+                    <td><a href="#">Japanese core 1</a>/Prof. David Bash</td>
+                    <td>Core Japanese + images + audio</td>
+                    <td>4</td>
+                    <td>01/02/2014</td>
+                    <td>15/05/2014</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>JAP-2</td>
+                    <td><a href="#">Japanese core 2</a>/Prof. David Bash</td>
+                    <td>Core Japanese + images + audio</td>
+                    <td>2</td>
+                    <td>01/02/2014</td>
+                    <td>15/05/2014</td>
+                    <td>20</td>
+                </tr>
+            </tbody>
+        </table>
     </div><!-- end container -->
 
     <!-- jQuery -->

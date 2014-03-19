@@ -25,3 +25,21 @@ input, select {
     font-weight: bold;
     padding-left: 0;
 }
+
+.course-search {
+    h2 {
+        margin: $default-spacing-large 0 $default-spacing;
+    }
+
+    .form-control {
+        display: inline;
+
+        & + .form-control {
+            margin-left: $default-spacing;
+        }
+    }
+
+    .table {
+        margin-top: $default-spacing-large;
+    }
+}

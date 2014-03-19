@@ -5006,3 +5006,12 @@ input, select {
 .control-label.radio-inline {
   font-weight: bold;
   padding-left: 0; }
+
+.course-search h2 {
+  margin: 40px 0 20px; }
+.course-search .form-control {
+  display: inline; }
+  .course-search .form-control + .form-control {
+    margin-left: 20px; }
+.course-search .table {
+  margin-top: 40px; }
