@@ -1,4 +1,10 @@
-open-fluency-html
-=================
+# HTML/CSS for OpenFluency Views
 
-Static HTML/CSS for OpenFluency UI
+Created using [SASS](http://sass-lang.com/) and [Bootstrap](http://getbootstrap.com/). 
+
+To override styles:
+
+* Install [SASS](http://sass-lang.com/)
+* Run the following command on the command line: sass --watch scss:css
+* Add any overriding/custom styles to scss/styles.scss
+* Add any overriding/custom variables to scss/variables.scss
