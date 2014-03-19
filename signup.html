@@ -6,7 +6,7 @@
     <title>OpenFluency</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
 </head>
 <body>
     <header>
@@ -14,12 +14,20 @@
             <div class="container">
                 <a class="navbar-brand" href="#">OpenFluency</a>
                 <ul class="nav navbar-nav">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="courses.html">Courses</a></li>
-                    <li><a href="decks.html">Decks</a></li>
-                    <li><a href="statistics.html">Statistics</a></li>
+                    <li class=""><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Courses<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="enrolled.html">Enrolled courses</a></li>
+                            <li><a href="course-search.html">Search for courses</a></li>
+                            <li><a href="new-course.html">Create new course</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a href="decks.html">Decks</a></li>
+                    <li class="dropdown"><a href="statistics.html">Statistics</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
+                    <!-- logic goes here: if signed in, changes to name -->
                     <li><a href="signin.html">Sign In</a></li>
                 </ul>
             </div>
@@ -93,6 +101,6 @@
     <!-- jQuery -->
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="bootstrap-assets/javascripts/bootstrap/bootstrap.min.js"></script>
+    <script src="bootstrap-assets/js/bootstrap.min.js"></script>
 </body>
 </html>
