@@ -2,6 +2,8 @@
 
 Created using [SASS](http://sass-lang.com/) and [Bootstrap](http://getbootstrap.com/). 
 
+The files are viewable at: http://capstone-team-3.github.io/open-fluency-html/.
+
 To override styles:
 
 * Install [SASS](http://sass-lang.com/)
