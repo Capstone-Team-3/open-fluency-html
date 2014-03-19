@@ -4988,6 +4988,12 @@ button.close {
   .hidden-print {
     display: none !important; } }
 /* ---------------------------------------------------------------------------*/
+/* HEADINGS
+/* ---------------------------------------------------------------------------*/
+h2 {
+  margin: 40px 0 20px; }
+
+/* ---------------------------------------------------------------------------*/
 /* CUSTOM FORM STYLES 
 /* ---------------------------------------------------------------------------*/
 .btn {
@@ -5007,11 +5013,29 @@ input, select {
   font-weight: bold;
   padding-left: 0; }
 
-.course-search h2 {
-  margin: 40px 0 20px; }
+/* ---------------------------------------------------------------------------*/
+/* MODULE STYLES
+/* ---------------------------------------------------------------------------*/
 .course-search .form-control {
   display: inline; }
   .course-search .form-control + .form-control {
     margin-left: 20px; }
 .course-search .table {
   margin-top: 40px; }
+
+.all-decks {
+  background-color: whitesmoke;
+  padding: 40px 0; }
+
+.deck {
+  background-color: #fefefe;
+  border: 1px solid #ccc;
+  height: 400px;
+  margin: 0 auto;
+  max-width: 300px;
+  padding: 20px;
+  text-align: center; }
+  .deck h3 {
+    padding-top: 40px; }
+  .deck .progress {
+    margin-top: 40px; }

@@ -2,6 +2,15 @@
 @import "variables";
 @import "../bootstrap-assets/stylesheets/bootstrap/bootstrap";
 
+
+/* ---------------------------------------------------------------------------*/
+/* HEADINGS
+/* ---------------------------------------------------------------------------*/
+
+h2 {
+    margin: $default-spacing-large 0 $default-spacing;
+}
+
 /* ---------------------------------------------------------------------------*/
 /* CUSTOM FORM STYLES 
 /* ---------------------------------------------------------------------------*/
@@ -26,10 +35,12 @@ input, select {
     padding-left: 0;
 }
 
+
+/* ---------------------------------------------------------------------------*/
+/* MODULE STYLES
+/* ---------------------------------------------------------------------------*/
+
 .course-search {
-    h2 {
-        margin: $default-spacing-large 0 $default-spacing;
-    }
 
     .form-control {
         display: inline;
@@ -41,5 +52,28 @@ input, select {
 
     .table {
         margin-top: $default-spacing-large;
+    }
+}
+
+.all-decks {
+    background-color: $breadcrumb-bg;
+    padding: $default-spacing-large 0;
+}
+
+.deck {
+    background-color: #fefefe;
+    border: 1px solid #ccc;
+    height: 400px;
+    margin: 0 auto;
+    max-width: 300px;
+    padding: $default-spacing;
+    text-align: center;
+
+    h3 {
+        padding-top: $default-spacing-large;
+    }
+
+    .progress {
+        margin-top: $default-spacing-large;  
     }
 }
