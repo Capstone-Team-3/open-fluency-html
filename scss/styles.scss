@@ -1,0 +1,27 @@
+// customize bootstrap variables here:
+@import "variables";
+@import "../bootstrap-assets/stylesheets/bootstrap/bootstrap";
+
+/* ---------------------------------------------------------------------------*/
+/* CUSTOM FORM STYLES 
+/* ---------------------------------------------------------------------------*/
+.btn {
+    margin-top: $padding-large-vertical;
+}
+
+input, select {
+    max-width: 330px;
+}
+
+.control-label,
+.radio,
+.checkbox,
+.radio-inline,
+.checkbox-inline {
+    padding-top: ($padding-large-vertical + 1); // padding plus a border
+}
+
+.control-label.radio-inline {
+    font-weight: bold;
+    padding-left: 0;
+}
