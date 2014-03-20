@@ -14,12 +14,8 @@ h2 {
 /* ---------------------------------------------------------------------------*/
 /* CUSTOM FORM STYLES 
 /* ---------------------------------------------------------------------------*/
-.btn {
+.btn[type="submit"] {
     margin-top: $padding-large-vertical;
-}
-
-input, select {
-    max-width: 330px;
 }
 
 .control-label,
@@ -35,20 +31,22 @@ input, select {
     padding-left: 0;
 }
 
-
 /* ---------------------------------------------------------------------------*/
 /* MODULE STYLES
 /* ---------------------------------------------------------------------------*/
 
-.course-search {
+.signup {
 
-    .form-control {
-        display: inline;
-
-        & + .form-control {
-            margin-left: $default-spacing;
-        }
+    label[for="user-type"] {
+        display: block;
     }
+
+    .radio-inline {
+        padding-top: 0;
+    }
+}
+
+.course-search {
 
     .table {
         margin-top: $default-spacing-large;
@@ -62,14 +60,20 @@ input, select {
     .pagination-container {
         text-align: center;
     }
+
+    .glyphicon-search {
+        padding-top: 1px;
+    }
 }
 
-.all-decks, .chapter .container {
+.all-decks, 
+.chapter .container {
     background-color: $breadcrumb-bg;
     padding: $default-spacing-large 0;
 }
 
-.deck, .card {
+.deck, 
+.card {
     background-color: #fefefe;
     border: 1px solid #ccc;
     height: 400px;
@@ -88,13 +92,14 @@ input, select {
 }
 
 .chapter {
+    
     .page-title {
         float: left;
     }
 
     .actions {
         float: right;
-        margin: $default-spacing 0;
+        margin: $default-spacing-large 0 $default-spacing;
     }
 
     .card {

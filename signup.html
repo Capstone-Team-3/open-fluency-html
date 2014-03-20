@@ -9,93 +9,104 @@
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
 </head>
 <body>
+    
     <header>
-        <div class="navbar navbar-default navbar-static-top">
+        
+        <nav class="navbar navbar-default navbar-static-top">
             <div class="container">
                 <a class="navbar-brand" href="#">OpenFluency</a>
+                
                 <ul class="nav navbar-nav">
                     <li class=""><a href="index.html">Home</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Courses<b class="caret"></b></a>
                         <ul class="dropdown-menu">
-                            <li><a href="enrolled.html">Enrolled courses</a></li>
+                            <li><a href="#">Enrolled courses</a></li>
                             <li><a href="course-search.html">Search for courses</a></li>
-                            <li><a href="new-course.html">Create new course</a></li>
+                            <li><a href="#">Create new course</a></li>
                         </ul>
                     </li>
-                    <li class="dropdown"><a href="decks.html">Decks</a></li>
-                    <li class="dropdown"><a href="statistics.html">Statistics</a></li>
+                    <li class="dropdown"><a href="#">Decks</a></li>
+                    <li class="dropdown"><a href="#">Statistics</a></li>
                 </ul>
+                
                 <ul class="nav navbar-nav navbar-right">
                     <!-- logic goes here: if signed in, changes to name -->
                     <li><a href="signin.html">Sign In</a></li>
                 </ul>
-            </div>
-        </div>
+                
+            </div><!-- end container -->
+        </nav>
+
     </header>
-    <div class="container">
-        <form role="form">
-            <h2>Sign Up</h2>
-            <p>Already have an account? <a href="signin.html">Sign in</a>.</p>
+    
+    <div class="container signup">
+        <div class="col-lg-4">
 
-            <label class="control-label" for="username">Username*:</label>
-            <input class="form-control" type="text" name="username" id="username" required autofocus/>
+            <form role="form">
+                <h2>Sign Up</h2>
+                <p>Already have an account? <a href="signin.html">Sign in</a>.</p>
 
-            <label class="control-label" for="pass">Password*:</label>
-            <input class="form-control" type="password" name="pass" id="pass" required/>
+                <label class="control-label" for="username">Username*:</label>
+                <input class="form-control" type="text" name="username" id="username" required autofocus/>
 
-            <label class="control-label" for="confirm-pass">Confirm Password*:</label>
-            <input class="form-control" type="password" name="confirm-pass" id="confirm-pass" required/>
+                <label class="control-label" for="pass">Password*:</label>
+                <input class="form-control" type="password" name="pass" id="pass" required/>
 
-            <label class="control-label" for="email">Email*:</label>
-            <input class="form-control" type="text" name="email" id="email" required/>
+                <label class="control-label" for="confirm-pass">Confirm Password*:</label>
+                <input class="form-control" type="password" name="confirm-pass" id="confirm-pass" required/>
 
-            <div>
-                <label class="control-label radio-inline" for="user-type">Type of User*:</label>
-                <div class="radio-inline">
-                    <input type="radio" name="user-type" value="student" />Student
+                <label class="control-label" for="email">Email*:</label>
+                <input class="form-control" type="text" name="email" id="email" required/>
+
+                <div>
+                    <label class="control-label" for="user-type">Type of User*:</label>
+                    <div class="radio-inline">
+                        <input type="radio" name="user-type" value="student" />Student
+                    </div>
+                    <div class="radio-inline">
+                        <input type="radio" name="user-type" value="instructor" />Instructor
+                    </div>
+                    <div class="radio-inline">
+                        <input type="radio" name="user-type" value="researcher" />Researcher
+                    </div>
                 </div>
-                <div class="radio-inline">
-                    <input type="radio" name="user-type" value="instructor" />Instructor
-                </div>
-                <div class="radio-inline">
-                    <input type="radio" name="user-type" value="researcher" />Researcher
-                </div>
-            </div>
 
-            <label class="control-label" for="classes">Previous Language Classes:</label>
-            <select class="form-control">
-                <option value="default">Choose a class</option>
-                <option value="japanese">Japanese</option>
-                <option value="chinese">Chinese</option>
-            </select>
+                <label class="control-label" for="classes">Previous Language Classes:</label>
+                <select class="form-control">
+                    <option value="default">Choose a class</option>
+                    <option value="japanese">Japanese</option>
+                    <option value="chinese">Chinese</option>
+                </select>
 
-            <label class="control-label" for="langs">Native Language*:</label>
-            <select class="form-control">
-                <option value="default">Choose a language</option>
-                <option value="english">English</option>
-                <option value="japanese">Japanese</option>
-                <option value="chinese">Chinese</option>
-            </select>
+                <label class="control-label" for="langs">Native Language*:</label>
+                <select class="form-control">
+                    <option value="default">Choose a language</option>
+                    <option value="english">English</option>
+                    <option value="japanese">Japanese</option>
+                    <option value="chinese">Chinese</option>
+                </select>
 
-            <label class="control-label" for="second-langs">Secondary Language:</label>
-            <select class="form-control">
-                <option value="default">Choose a language</option>
-                <option value="english">English</option>
-                <option value="japanese">Japanese</option>
-                <option value="chinese">Chinese</option>
-            </select>
+                <label class="control-label" for="second-langs">Secondary Language:</label>
+                <select class="form-control">
+                    <option value="default">Choose a language</option>
+                    <option value="english">English</option>
+                    <option value="japanese">Japanese</option>
+                    <option value="chinese">Chinese</option>
+                </select>
 
-            <label class="control-label" for="proficiency">Proficiency Level:</label>
-            <select class="form-control">
-                <option value="proficiency-1">1</option>
-                <option value="proficiency-2">2</option>
-                <option value="proficiency-3">3</option>
-                <option value="proficiency-4">4</option>
-            </select>
+                <label class="control-label" for="proficiency">Proficiency Level:</label>
+                <select class="form-control">
+                    <option value="proficiency-1">1</option>
+                    <option value="proficiency-2">2</option>
+                    <option value="proficiency-3">3</option>
+                    <option value="proficiency-4">4</option>
+                </select>
 
-            <input class="btn btn-primary btn-block" type="submit" value="Sign Up" name="sign-up" id="sign-up" />
-        </form>
+                <input class="btn btn-primary btn-block" type="submit" value="Sign Up" name="sign-up" id="sign-up" />
+            </form>
+
+        </div> <!-- end col-lg-4 -->
     </div><!-- end container -->
 
     <!-- jQuery -->

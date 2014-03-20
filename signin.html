@@ -9,43 +9,54 @@
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
 </head>
 <body>
+    
     <header>
-        <div class="navbar navbar-default navbar-static-top">
+        
+        <nav class="navbar navbar-default navbar-static-top">
             <div class="container">
                 <a class="navbar-brand" href="#">OpenFluency</a>
+                
                 <ul class="nav navbar-nav">
                     <li class=""><a href="index.html">Home</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Courses<b class="caret"></b></a>
                         <ul class="dropdown-menu">
-                            <li><a href="enrolled.html">Enrolled courses</a></li>
+                            <li><a href="#">Enrolled courses</a></li>
                             <li><a href="course-search.html">Search for courses</a></li>
-                            <li><a href="new-course.html">Create new course</a></li>
+                            <li><a href="#">Create new course</a></li>
                         </ul>
                     </li>
-                    <li class="dropdown"><a href="decks.html">Decks</a></li>
-                    <li class="dropdown"><a href="statistics.html">Statistics</a></li>
+                    <li class="dropdown"><a href="#">Decks</a></li>
+                    <li class="dropdown"><a href="#">Statistics</a></li>
                 </ul>
+                
                 <ul class="nav navbar-nav navbar-right">
                     <!-- logic goes here: if signed in, changes to name -->
                     <li><a href="signin.html">Sign In</a></li>
                 </ul>
-            </div>
-        </div>
-    </header>
-    <div class="container">
-        <form role="form">
-            <h2>Sign In</h2>
-            <p>New user? <a href="signup.html">Sign Up</a>.</p>
+                
+            </div><!-- end container -->
+        </nav>
 
-            <label class="control-label" for="username">Username:</label>
-            <input class="form-control" type="text" name="username" id="username" required autofocus/>
+    </header>    
 
-            <label class="control-label" for="pass">Password:</label>
-            <input class="form-control" type="password" name="pass" id="pass" required/>
+    <div class="container signin">
+        <div class="col-lg-4">
+            
+            <form role="form">
+                <h2>Sign In</h2>
+                <p>New user? <a href="signup.html">Sign Up</a>.</p>
 
-            <input class="btn btn-primary btn-block" type="submit" value="Sign In" name="sign-in" id="sign-in" />
-        </form>
+                <label class="control-label" for="username">Username:</label>
+                <input class="form-control" type="text" name="username" id="username" required autofocus/>
+
+                <label class="control-label" for="pass">Password:</label>
+                <input class="form-control" type="password" name="pass" id="pass" required/>
+
+                <input class="btn btn-primary btn-block" type="submit" value="Sign In" name="sign-in" id="sign-in" />
+            </form>
+
+        </div><!-- end col-lg-4 -->
     </div><!-- end container -->
 
     <!-- jQuery -->
