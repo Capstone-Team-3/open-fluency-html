@@ -2129,8 +2129,8 @@ input[type="button"].btn-block {
 
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url("bootstrap/glyphicons-halflings-regular.eot");
-  src: url("bootstrap/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("bootstrap/glyphicons-halflings-regular.woff") format("woff"), url("bootstrap/glyphicons-halflings-regular.ttf") format("truetype"), url("bootstrap/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg"); }
+  src: url("../bootstrap-assets/fonts/glyphicons-halflings-regular.eot");
+  src: url("../bootstrap-assets/fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../bootstrap-assets/fonts/glyphicons-halflings-regular.woff") format("woff"), url("../bootstrap-assets/fonts/glyphicons-halflings-regular.ttf") format("truetype"), url("../bootstrap-assets/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg"); }
 
 .glyphicon {
   position: relative;
@@ -5023,11 +5023,11 @@ input, select {
 .course-search .table {
   margin-top: 40px; }
 
-.all-decks {
+.all-decks, .chapter .container {
   background-color: whitesmoke;
   padding: 40px 0; }
 
-.deck {
+.deck, .card {
   background-color: #fefefe;
   border: 1px solid #ccc;
   height: 400px;
@@ -5035,7 +5035,32 @@ input, select {
   max-width: 300px;
   padding: 20px;
   text-align: center; }
-  .deck h3 {
+  .deck h3, .card h3 {
     padding-top: 40px; }
-  .deck .progress {
+  .deck .progress, .card .progress {
     margin-top: 40px; }
+
+.chapter .page-title {
+  float: left; }
+.chapter .actions {
+  float: right;
+  margin: 20px 0; }
+.chapter .card {
+  border: 0;
+  border-top: 1px solid #ededed;
+  clear: both;
+  font-size: 24px;
+  height: auto;
+  max-width: 1170px;
+  padding-top: 40px; }
+  .chapter .card div {
+    margin-bottom: 20px; }
+  .chapter .card div:last-child {
+    margin-bottom: 0; }
+.chapter .unit {
+  font-size: 30px; }
+.chapter .audio .glyphicon {
+  font-size: 30px; }
+.chapter .pagination {
+  float: right;
+  font-size: 14px; }

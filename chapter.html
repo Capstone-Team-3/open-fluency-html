@@ -1,0 +1,84 @@
+<!doctype html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>OpenFluency</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-default navbar-static-top">
+            <div class="container">
+                <div class="navbar-header">
+                <a class="navbar-brand" href="#">OpenFluency</a>
+                <ul class="nav navbar-nav">
+                    <li class=""><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Courses<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="enrolled.html">Enrolled courses</a></li>
+                            <li><a href="course-search.html">Search for courses</a></li>
+                            <li><a href="new-course.html">Create new course</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a href="decks.html">Decks</a></li>
+                    <li class="dropdown"><a href="statistics.html">Statistics</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <!-- logic goes here: if signed in, changes to name -->
+                    <li><a href="signin.html">Sign In</a></li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container chapter">
+        
+        <ul class="breadcrumb">
+            <li><a href="dashboard.html">Home</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="course-search.html">Search for Course</a></li>
+            <li><a href="course.html">Japanese core 1</a></li>
+            <li><a href="chapter.html">Chapter 1</a></li>
+        </ul>
+
+        <h2 class="page-title">Chapter 1</h2>
+
+        <div class="actions btn-group">
+            <button type="button" class="btn btn-info btn-default"><span class="glyphicon glyphicon-cog"></span></button>
+            <button type="button" class="btn btn-info btn-default"><span class="glyphicon glyphicon-info-sign"></span></button>
+            <button type="button" class="btn btn-info btn-default"><span class="glyphicon glyphicon-remove"></span></button>
+        </div>
+
+        <div class="card">
+            <div class="unit">
+                <img src="images/example-unit.png"><!-- placeholder image -->
+            </div>
+            <div class="pronunciation">nihongo</div>
+            <div class="audio">
+                <span class="glyphicon glyphicon-volume-up"></span>
+            </div>
+            <div class="image">
+                <img src="images/japanese-association.png">
+            </div>
+            <div class="translation">Japanese Language</div>
+            <div class="level btn-group">
+                <button type="button" class="btn btn-primary btn-default">Easy</button>
+                <button type="button" class="btn btn-primary btn-default">Medium</button>
+                <button type="button" class="btn btn-primary btn-default">Difficult</button>
+            </div>
+        </div><!-- end card -->
+    
+        <div class="pagination">1/20</div>
+
+    </div><!-- end container -->
+
+    <!-- jQuery -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap-assets/js/bootstrap.min.js"></script>
+</body>
+</html>

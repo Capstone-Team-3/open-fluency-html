@@ -55,12 +55,12 @@ input, select {
     }
 }
 
-.all-decks {
+.all-decks, .chapter .container {
     background-color: $breadcrumb-bg;
     padding: $default-spacing-large 0;
 }
 
-.deck {
+.deck, .card {
     background-color: #fefefe;
     border: 1px solid #ccc;
     height: 400px;
@@ -75,5 +75,47 @@ input, select {
 
     .progress {
         margin-top: $default-spacing-large;  
+    }
+}
+
+.chapter {
+    .page-title {
+        float: left;
+    }
+
+    .actions {
+        float: right;
+        margin: $default-spacing 0;
+    }
+
+    .card {
+        border: 0;
+        border-top: 1px solid #ededed;
+        clear: both;
+        font-size: $font-size-h3;
+        height: auto;
+        max-width: $container-lg;
+        padding-top: $default-spacing-large;
+
+        div {
+            margin-bottom: $default-spacing;
+        }
+
+        div:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .unit {
+        font-size: $font-size-h2;
+    }
+
+    .audio .glyphicon {
+        font-size: $font-size-h2;
+    }
+
+    .pagination {
+        float: right;
+        font-size: $font-size-base;
     }
 }
