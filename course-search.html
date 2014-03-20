@@ -9,43 +9,66 @@
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
 </head>
 <body>
+    
     <header>
-        <div class="navbar navbar-default navbar-static-top">
+        
+        <nav class="navbar navbar-default navbar-static-top">
             <div class="container">
                 <a class="navbar-brand" href="#">OpenFluency</a>
+                
                 <ul class="nav navbar-nav">
                     <li class=""><a href="index.html">Home</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Courses<b class="caret"></b></a>
                         <ul class="dropdown-menu">
-                            <li><a href="enrolled.html">Enrolled courses</a></li>
+                            <li><a href="#">Enrolled courses</a></li>
                             <li><a href="course-search.html">Search for courses</a></li>
-                            <li><a href="new-course.html">Create new course</a></li>
+                            <li><a href="#">Create new course</a></li>
                         </ul>
                     </li>
-                    <li class="dropdown"><a href="decks.html">Decks</a></li>
-                    <li class="dropdown"><a href="statistics.html">Statistics</a></li>
+                    <li class="dropdown"><a href="#">Decks</a></li>
+                    <li class="dropdown"><a href="#">Statistics</a></li>
                 </ul>
+                
                 <ul class="nav navbar-nav navbar-right">
                     <!-- logic goes here: if signed in, changes to name -->
                     <li><a href="signin.html">Sign In</a></li>
                 </ul>
-            </div>
-        </div>
+                
+            </div><!-- end container -->
+        </nav>
+
     </header>
+
     <div class="container course-search">
+
         <ul class="breadcrumb">
             <li><a href="dashboard.html">Home</a></li>
             <li><a href="#">Courses</a></li>
             <li><a href="course-search.html">Search for Course</a></li>
         </ul>
+
         <h2 class="page-title">Course Search</h2>
-        <input class="form-control" type="text" placeholder="Type a course name or keyword" id="search-text"/>
-        <select class="form-control">
-            <option value="default">Filter by language</option>
-            <option value="filter-japanese">Japanese</option>
-            <option value="filter-chinese">Chinese</option>
-        </select>
+
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="input-group">
+                    <input class="form-control" type="text" placeholder="Type a course name or keyword" id="search-text" />
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
+                    </span>
+                </div><!-- end input-group -->
+            </div><!-- end col-lg-4 -->
+            
+            <div class="col-lg-4">
+                <select class="form-control">
+                    <option value="default">Filter by language</option>
+                    <option value="filter-japanese">Japanese</option>
+                    <option value="filter-chinese">Chinese</option>
+                </select>
+            </div><!-- end col-lg-4 -->
+
+        </div><!-- end row -->
 
         <table class="table">
             <thead>
@@ -88,8 +111,8 @@
                 <li><a href="">2</a></li>
                 <li><a href="">&raquo;</a></li>
             </ul>
-        </div>
-        
+        </div><!-- end pagination-container -->
+
     </div><!-- end container -->
 
     <!-- jQuery -->
