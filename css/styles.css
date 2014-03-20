@@ -5022,6 +5022,11 @@ input, select {
     margin-left: 20px; }
 .course-search .table {
   margin-top: 40px; }
+.course-search .pagination {
+  margin-top: 40px;
+  text-align: center; }
+.course-search .pagination-container {
+  text-align: center; }
 
 .all-decks, .chapter .container {
   background-color: whitesmoke;

@@ -53,6 +53,15 @@ input, select {
     .table {
         margin-top: $default-spacing-large;
     }
+
+    .pagination {
+        margin-top: $default-spacing-large;
+        text-align: center;   
+    }
+
+    .pagination-container {
+        text-align: center;
+    }
 }
 
 .all-decks, .chapter .container {
