@@ -5018,6 +5018,14 @@ h2 {
 .signup .radio-inline {
   padding-top: 0; }
 
+.dashboard .dash-button .btn {
+  width: auto; }
+  @media (min-width: 1170px) {
+    .dashboard .dash-button .btn {
+      font-size: 24px;
+      padding: 33% 0;
+      width: 100%; } }
+
 .course-search .table {
   margin-top: 40px; }
 .course-search .pagination {

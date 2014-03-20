@@ -46,6 +46,21 @@ h2 {
     }
 }
 
+.dashboard {
+
+    .dash-button {
+
+        .btn {
+            width: auto;
+            @media (min-width: $container-lg) {
+                font-size: $font-size-h3;
+                padding: 33% 0;
+                width: 100%;
+            }
+        }
+    }
+}
+
 .course-search {
 
     .table {
